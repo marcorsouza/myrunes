@@ -1,0 +1,173 @@
+<div class="row">
+   <div class="col-sm-12">
+      <div class="card">
+         <div class="card-header">
+             <h4>INSIRA OS DADOS DA RUNA AQUI</h4>
+             <small class="form-text text-muted">*Nota. Leve em consideração somente os valores de sub-stats, os valores do main stat no entram no cálculo
+ideal que a runa esteja pelo menos +12 para que os cálculos sejam válidos</small>
+         </div>
+         <div class="card-body">
+            <div class="row">
+                
+               <div class="col-sm-3">
+                   <div class="card">
+                        <div class="card-header">
+                            Atributos FLAT
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="fatk">Atk - Flat</label>
+                                <input type="text"
+                                    class="form-control" name="fatk" id="fatk" aria-describedby="helpId" placeholder="Atk Flat" data-bind="value:fatk">
+                                <small id="helpId" class="form-text text-muted">Valor / 10</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="fdef">Def - Flat</label>
+                                <input type="text"
+                                    class="form-control" name="fdef" id="fdef" aria-describedby="helpId" placeholder="Def Flat" data-bind="value:fdef">
+                                <small id="helpId" class="form-text text-muted">Valor / 10</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="fdef">Hp - Flat</label>
+                                <input type="text"
+                                    class="form-control" name="fhp" id="fhp" aria-describedby="helpId" placeholder="HP Flat" data-bind="value:fhp">
+                                <small id="helpId" class="form-text text-muted">Valor / 100</small>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="col-sm-3">
+                   <div class="card">
+                        <div class="card-header">
+                            Atributos %
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="fdef">Atk - % </label>
+                                <input type="text"
+                                    class="form-control" name="atk" id="atk" aria-describedby="helpId" placeholder="HP %" data-bind="value:atk">
+                                <small id="helpId" class="form-text text-muted">Valor</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="fdef">Def - %</label>
+                                <input type="text"
+                                    class="form-control" name="def" id="def" aria-describedby="helpId" placeholder="Def %" data-bind="value:def">
+                                <small id="helpId" class="form-text text-muted">Valor</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="fdef">Hp - %</label>
+                                <input type="text"
+                                    class="form-control" name="hp" id="hp" aria-describedby="helpId" placeholder="HP Flat" data-bind="value:hp">
+                                <small id="helpId" class="form-text text-muted">Valor</small>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="col-sm-3">
+                   <div class="card">
+                        <div class="card-header">
+                            Atributos Unicos
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="fdef">Precisão (Acc) </label>
+                                <input type="text"
+                                    class="form-control" name="acc" id="acc" aria-describedby="helpId" placeholder="Precisão" data-bind="value:acc">
+                                <small id="helpId" class="form-text text-muted">Valor</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="fdef">Resistência (Res)</label>
+                                <input type="text"
+                                    class="form-control" name="res" id="res" aria-describedby="helpId" placeholder="Resistência" data-bind="value:res">
+                                <small id="helpId" class="form-text text-muted">Valor</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="fdef">Velocidade (Spd)</label>
+                                <input type="text"
+                                    class="form-control" name="spd" id="spd" aria-describedby="helpId" placeholder="Velocidade" data-bind="value:spd">
+                                <small id="helpId" class="form-text text-muted">Valor * 1.33</small>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="col-sm-3">
+                   <div class="card">
+                        <div class="card-header">
+                            Crítico
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="fdef">Dano Crítico (CD) </label>
+                                <input type="text"
+                                    class="form-control" name="cd" id="cd" aria-describedby="helpId" placeholder="Dano Crítico" data-bind="value:cd">
+                                <small id="helpId" class="form-text text-muted">Valor</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="fdef">Taxa de Crítico (CR)</label>
+                                <input type="text"
+                                    class="form-control" name="cr" id="cr" aria-describedby="helpId" placeholder="Taxa de Crítico" data-bind="value:cr">
+                                <small id="helpId" class="form-text text-muted">Valor * 1.33</small>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+         <div class="card-footer">
+             <div class="row">
+                 <div class="col-sm-3">
+                     <button type="button" class="btn btn-info" data-bind="click: getRunePoints">Calcular</button>
+                     <label data-bind="text:resultado"></label>
+                 </div>
+             </div>
+         </div>
+      </div>
+   </div>   
+   <div class="col-sm-12">
+       <table class="table">
+           <thead>
+                <tr> 
+                    <th>Rank de Runas</th>
+                    <th>Mid</th>
+                    <th>Late</th>
+                </tr>
+           </thead>
+           <tbody>
+                <tr> 
+                    <td>Excelente</td>
+                    <td>60+</td>
+                    <td>80+</td>
+                </tr>
+                <tr> 
+                    <td>Ótimas</td>
+                    <td>50-59</td>
+                    <td>80+</td>
+                </tr>
+                <tr> 
+                    <td>Boas</td>
+                    <td>40-49</td>
+                    <td>60-69</td>
+                </tr>
+                <tr> 
+                    <td>Aceitáveis</td>
+                    <td>35-39</td>
+                    <td>50-59</td>
+                </tr>
+                <tr> 
+                    <td>Vender</td>
+                    <td>34-</td>
+                    <td>49-</td>
+                </tr>
+           </tbody>
+       </table>
+       </div>
+</div>
+<div class="row">
+       
+   </div>
+@section scripts {
+<script>
+   var stat = new Stats();
+   ko.applyBindings(stat);
+</script>
+}
