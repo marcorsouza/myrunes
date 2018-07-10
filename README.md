@@ -1,2 +1,2 @@
 # myrunes
-Maneira fácil de calcular a nota de sua runa
+Maneira fácil de calcular a nota de suas runas.
