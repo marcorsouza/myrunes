@@ -6,6 +6,8 @@ var Stats = function()
     self.resultado=ko.observable("");
     self.runeGrade= ko.observable("6");
 
+    self.availableRunes = ko.observableArray([5,6]);
+
     self.spd= ko.observable("0");
     self.cr=ko.observable("0");
     self.fatk=ko.observable("0");
@@ -91,6 +93,7 @@ var Stats = function()
     }
 
     self.getRunePoints = function(){
+        console.log(_runeGrade());
         
         points = pValues() + pOthers();
 

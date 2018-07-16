@@ -16,8 +16,9 @@ ideal que a runa esteja pelo menos +12 para que os cálculos sejam válidos</sma
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="runeGrade">Grade</label>
-                                <input type="text"
-                                    class="form-control" name="runeGrade" id="runeGrade" aria-describedby="helpId" placeholder="Rune Grade" data-bind="value:runeGrade">
+                                <select id="runeGrade" class="form-control" data-bind="options: availableRunes, value: runeGrade,
+                                        optionsCaption: 'Choose...'">
+                                </select>
                                 <small id="helpId" class="form-text text-muted"></small>
                             </div>                            
                         </div>
