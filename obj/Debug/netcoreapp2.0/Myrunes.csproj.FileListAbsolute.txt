@@ -19,3 +19,4 @@ C:\Users\manz\Desktop\Myrunes\Myrunes\obj\Debug\netcoreapp2.0\Myrunes.AssemblyIn
 C:\Users\manz\Desktop\Myrunes\Myrunes\obj\Debug\netcoreapp2.0\Myrunes.AssemblyInfo.cs
 C:\Users\manz\Desktop\Myrunes\Myrunes\obj\Debug\netcoreapp2.0\Myrunes.dll
 C:\Users\manz\Desktop\Myrunes\Myrunes\obj\Debug\netcoreapp2.0\Myrunes.pdb
+C:\Users\manz\Desktop\Myrunes\Myrunes\obj\Debug\netcoreapp2.0\Myrunes.csprojResolveAssemblyReference.cache
