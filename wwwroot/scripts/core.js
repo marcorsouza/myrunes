@@ -37,6 +37,7 @@ var Stats = function()
     var _fhp = function(){ return parseInt(self.fhp()); };
     var _fdef = function(){ return parseInt(self.fdef()); };
 
+    /* Rune Points */
     var getAtk = function(){return _atk();}
     var getHp = function(){return _hp();}
     var getDef = function(){return _def();}
@@ -46,34 +47,43 @@ var Stats = function()
     var getSpd = function(){return _spd() * 1.33;}
     var getCr = function(){return _cr() * 1.33;}
     var getFatk = function(){return _fatk() / 10;}
-    var getFdef = function(){return _fhp() / 10;}
-    var getFhp = function(){return _fdef() / 100;}
+    var getFdef = function(){return _fdef() / 10;}
+    var getFhp = function(){return _fhp() / 100;}
 
     /* Rune efficiency */
+    var getRuneEffAtk = function(){ return calcEffiencySubStats(_atk(), 8, 7); }
 
-    var getRuneEffAtk = function(){
-        if (_atk() == 0) return 0; console.log(Math.round(_runeGrade() == 6 ? _atk() / 8 : _atk() / 7));   return  parseFloat((_runeGrade() == 6 ? _atk() / 8 : _atk() / 7));}
+    var getRuneEffHp = function(){ return calcEffiencySubStats(_hp(), 8, 7); }
 
-    var getRuneEffHp = function(){if (_hp() == 0) return 0; return parseFloat((_runeGrade() == 6 ? _hp() / 8 : _hp() / 7));}
+    var getRuneEffDef = function(){ return calcEffiencySubStats(_def(), 8, 7); }
 
-    var getRuneEffDef = function(){if (_def() == 0) return 0; return parseFloat((_runeGrade() == 6 ? _def() / 8 : _def() / 7));}
+    var getRuneEffAcc = function(){ return calcEffiencySubStats(_acc(), 8, 7); }
 
+    var getRuneEffRes = function(){ return calcEffiencySubStats(_res(), 8, 7); }
 
-    var getRuneEffAcc = function(){if (_acc() == 0) return 0; return parseFloat((_runeGrade() == 6  ? _acc() / 8 : _acc() / 7));}
+    var getRuneEffCd = function(){ return calcEffiencySubStats(_cd(), 7, 5); }
 
-    var getRuneEffRes = function(){if (_res() == 0) return 0; return parseFloat((_runeGrade() == 6  ? _res() / 8 : _res() / 7));}
+    var getRuneEffSpd = function(){ return calcEffiencySubStats(_spd(), 6, 5); 
 
-    var getRuneEffCd = function(){if (_cd() == 0) return 0; return parseFloat((_runeGrade() == 6  ? _cd() / 7 : _cd() / 5));}
+    var getRuneEffCr = function(){ return calcEffiencySubStats(_cr(), 6, 5); }
 
-    var getRuneEffSpd = function(){if ( _spd() == 0) return 0; return parseFloat((_runeGrade() == 6 ?  _spd() / 6 : _spd() / 5));}
+    var getRuneEffFatk = function(){ return calcEffiencySubStats(_fatk(), 20, 5); }
 
-    var getRuneEffCr = function(){if (_cr() == 0) return 0; return parseFloat((_runeGrade() == 6 ? _cr() / 6 : _cr() / 5));}
+    var getRuneEffFdef = function(){ return calcEffiencySubStats(_fdef(), 20, 5); }
 
-    var getRuneEffFatk = function(){if (_fatk() == 0) return 0;return parseFloat((_runeGrade() == 6  ? _fatk() / 20 : _fatk() / 5));}
+    var getRuneEffFhp = function(){ return calcEffiencySubStats(_fhp(), 375, 300); }
 
-    var getRuneEffFdef = function(){if (_fdef() == 0) return 0;return parseFloat((_runeGrade() == 6 ? _fdef() / 20 : _fdef() / 5));}
+    var isRune6 = function(){
+        return _runeGrade() == 6;
+    }
 
-    var getRuneEffFhp = function(){if (_fhp() == 0) return 0; return parseFloat((_runeGrade() == 6 ? _fhp() / 375 : _fhp() / 300));}
+    var calcEffiencySubStats = function(valueSubStats, param6, param5)
+    {
+        if(valueSubStats == 0)
+            return 0;
+
+        return parseFloat(isRune6() ? valueSubStats / param6 : valueSubStats / param5 );
+    }
 
     var pValues = function(){
         return getAtk() + getHp() + getDef() + getAcc() + getRes() + getCd();
@@ -94,7 +104,6 @@ var Stats = function()
 
     self.getRunePoints = function(){
         console.log(_runeGrade());
-        
         points = pValues() + pOthers();
 
         var runes = pEfficiencyRune();
