@@ -63,7 +63,7 @@ var Stats = function()
 
     var getRuneEffCd = function(){ return calcEffiencySubStats(_cd(), 7, 5); }
 
-    var getRuneEffSpd = function(){ return calcEffiencySubStats(_spd(), 6, 5); 
+    var getRuneEffSpd = function(){ return calcEffiencySubStats(_spd(), 6, 5); }
 
     var getRuneEffCr = function(){ return calcEffiencySubStats(_cr(), 6, 5); }
 
