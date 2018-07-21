@@ -20,3 +20,14 @@ C:\Users\manz\Desktop\Myrunes\Myrunes\obj\Debug\netcoreapp2.0\Myrunes.AssemblyIn
 C:\Users\manz\Desktop\Myrunes\Myrunes\obj\Debug\netcoreapp2.0\Myrunes.dll
 C:\Users\manz\Desktop\Myrunes\Myrunes\obj\Debug\netcoreapp2.0\Myrunes.pdb
 C:\Users\manz\Desktop\Myrunes\Myrunes\obj\Debug\netcoreapp2.0\Myrunes.csprojResolveAssemblyReference.cache
+D:\Desenvolvimento\Myrunes\myrunes\bin\Debug\netcoreapp2.0\Myrunes.deps.json
+D:\Desenvolvimento\Myrunes\myrunes\bin\Debug\netcoreapp2.0\Myrunes.runtimeconfig.json
+D:\Desenvolvimento\Myrunes\myrunes\bin\Debug\netcoreapp2.0\Myrunes.runtimeconfig.dev.json
+D:\Desenvolvimento\Myrunes\myrunes\bin\Debug\netcoreapp2.0\Myrunes.dll
+D:\Desenvolvimento\Myrunes\myrunes\bin\Debug\netcoreapp2.0\Myrunes.pdb
+D:\Desenvolvimento\Myrunes\myrunes\obj\Debug\netcoreapp2.0\Myrunes.csprojAssemblyReference.cache
+D:\Desenvolvimento\Myrunes\myrunes\obj\Debug\netcoreapp2.0\Myrunes.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento\Myrunes\myrunes\obj\Debug\netcoreapp2.0\Myrunes.AssemblyInfoInputs.cache
+D:\Desenvolvimento\Myrunes\myrunes\obj\Debug\netcoreapp2.0\Myrunes.AssemblyInfo.cs
+D:\Desenvolvimento\Myrunes\myrunes\obj\Debug\netcoreapp2.0\Myrunes.dll
+D:\Desenvolvimento\Myrunes\myrunes\obj\Debug\netcoreapp2.0\Myrunes.pdb

@@ -6,5 +6,9 @@ namespace Myrunes{
         public ActionResult Index(){
             return View();
         }
+
+        public ActionResult Index2(){
+            return View();
+        }
     }
 }
